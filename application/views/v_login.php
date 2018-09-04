@@ -25,7 +25,7 @@
     <body>
         <div class="js-header">
             <div class="js-header--left">
-                <img src="<?php echo RUTA_IMG?>logo/hpe-intel.png">
+                <img src="<?php echo RUTA_IMG?>logo/hpe-logo.png">
             </div>
             <div class="js-header--right">
                 <p>HPE Simplivity - Intel</p>

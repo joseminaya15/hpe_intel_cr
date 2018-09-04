@@ -25,7 +25,7 @@
     <div class="js-header">
         <div class="js-header--container">
             <div class="js-header--left">
-                <img src="<?php echo RUTA_IMG?>logo/hpe-intel.png">
+                <img src="<?php echo RUTA_IMG?>logo/hpe-logo.png">
             </div>
         </div>
     </div>
@@ -36,6 +36,10 @@
                 <div class="js-contenido">
                     <h2>Gane agilidad con un datacenter definido por software(SDN)</h2>
                     <p>Ofrecido por HPE. Auspiciado por Intel&reg;</p>
+                    <div class="js-xeon">
+                        <img src="<?php echo RUTA_IMG?>logo/xeon-logo.png">
+                        <p>Intel&reg; Xeon&reg; Scalable processors</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -43,10 +47,9 @@
     <section id="register" class="js-section">
         <div class="js-container">
             <div class="js-information">
-                <h2>Mi&eacute;rcoles 3 de Octubre, 2018</h2>
-                <h3>9:00 am a 5:00 pm</h3>
-                <p>Oficina HPE</p>
-                <span>Direcci&oacute;n</span>
+                <h2>Jueves 4 de Octubre, 2018</h2>
+                <h3>4:30 pm a 6:30 pm</h3>
+                <p>Tribeca, Costa Rica</p>
             </div>
             <div class="js-title">
                 <h2>Reg&iacute;strese completando el siguiente formulario</h2>
@@ -176,10 +179,10 @@
     <script src="<?php echo RUTA_JS?>Utils.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_JS?>jsindex.js?v=<?php echo time();?>"></script>
     <script type="text/javascript">
-        var URLactual = window.location;
-        if(URLactual['href'] != 'http://www.marketinghpe.com/microsite/nsx_sdn/cr'){
-            location.href = 'http://www.marketinghpe.com/microsite/nsx_sdn/cr';
-        }
+        // var URLactual = window.location;
+        // if(URLactual['href'] != 'http://www.marketinghpe.com/microsite/nsx_sdn/cr'){
+        //     location.href = 'http://www.marketinghpe.com/microsite/nsx_sdn/cr';
+        // }
     </script>
 </body>
 </html>
