@@ -10,7 +10,7 @@
         <meta name="date"                   content="January 25, 2018"/>
         <meta name="language"               content="es">
         <meta name="theme-color"            content="#000000">
-        <title>HPE Intel NSX - SDN</title>
+        <title>HPE Intel NSX - SDDC</title>
         <link rel="shortcut icon" href="<?php echo RUTA_IMG?>logo/favicon.ico">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>toaster/toastr.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap-select/css/bootstrap-select.min.css?v=<?php echo time();?>">
@@ -32,7 +32,7 @@
     <body>
         <div class="js-header js-fixed">
             <div class="js-header--left">
-                <img src="<?php echo RUTA_IMG?>logo/hpe-logo.png">
+                <img src="<?php echo RUTA_IMG?>logo/hpe-intel.png">
             </div>
         </div>
         <section id="principal" class="js-section js-section--admin">
@@ -48,7 +48,7 @@
                                     <th class="text-left">Nombre</th>
                                     <th class="text-left">Email</th>
                                     <th class="text-right">Tel&eacute;fono</th>
-                                    <th class="text-left">Canal</th>
+                                    <th class="text-left">Empresa</th>
                                     <th class="text-left">Cargo</th>
                                     <th class="text-left">País</th>
                                 </tr>

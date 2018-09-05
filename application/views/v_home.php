@@ -10,7 +10,7 @@
     <meta name="date"                   content="August 01, 2018"/>
     <meta name="language"               content="es">
     <meta name="theme-color"            content="#000000">
-	<title>HPE Intel NSX - SDN</title>
+	<title>HPE Intel NSX - SDDC</title>
     <link rel="shortcut icon" href="<?php echo RUTA_IMG?>logo/favicon.ico">
     <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>toaster/toastr.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>mdl/material.min.css?v=<?php echo time();?>">
@@ -25,7 +25,7 @@
     <div class="js-header">
         <div class="js-header--container">
             <div class="js-header--left">
-                <img src="<?php echo RUTA_IMG?>logo/hpe-logo.png">
+                <img src="<?php echo RUTA_IMG?>logo/hpe-intel.png">
             </div>
         </div>
     </div>
@@ -34,11 +34,10 @@
         <div class="js-container">
             <div class="js-home js-flex">
                 <div class="js-contenido">
-                    <h2>Gane agilidad con un datacenter definido por software(SDN)</h2>
-                    <p>Ofrecido por HPE. Auspiciado por Intel&reg;</p>
+                    <h2>Gane agilidad con un datacenter definido por software - SDDC</h2>
                     <div class="js-xeon">
                         <img src="<?php echo RUTA_IMG?>logo/xeon-logo.png">
-                        <p>Intel&reg; Xeon&reg; Scalable processors</p>
+                        <p>Familia de procesadores escalables Intel&reg; Xeon&reg;</p>
                     </div>
                 </div>
             </div>
@@ -50,6 +49,7 @@
                 <h2>Jueves 4 de Octubre, 2018</h2>
                 <h3>4:30 pm a 6:30 pm</h3>
                 <p>Tribeca, Costa Rica</p>
+                <span>Del Ceviche del Rey 2000 norte y 200 este. Casa esquinera a mano izquierda. Calle Lajas, Santa Ana, San Jose</span>
             </div>
             <div class="js-title">
                 <h2>Reg&iacute;strese completando el siguiente formulario</h2>
@@ -81,7 +81,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4">
                      <div class=" js-input">
-                        <label for="text">Nombre de Canal*</label>
+                        <label for="text">Empresa*</label>
                         <input type="text" id="company" >
                     </div>
                 </div>
@@ -180,8 +180,8 @@
     <script src="<?php echo RUTA_JS?>jsindex.js?v=<?php echo time();?>"></script>
     <script type="text/javascript">
         var URLactual = window.location;
-        if(URLactual['href'] != 'http://www.marketinghpe.com/microsite/nsx_sdn/cr/'){
-            location.href = 'http://www.marketinghpe.com/microsite/nsx_sdn/cr/';
+        if(URLactual['href'] != 'http://www.marketinghpe.com/microsite/nsx_sddc/cr/'){
+            location.href = 'http://www.marketinghpe.com/microsite/nsx_sddc/cr/';
         }
     </script>
 </body>
