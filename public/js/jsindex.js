@@ -19,7 +19,6 @@ $('a.link[href^="#"]').click(function(e) {
  	}, 'slow');
 });
 function sendInformation(){
-	var city        = $('#city').val();
 	var name 		= $('#name').val();
 	var surname 	= $('#surname').val();
 	var email 		= $('#email').val();
@@ -27,10 +26,6 @@ function sendInformation(){
 	var company 	= $('#company').val();
 	var position 	= $('#position').val();
 	var country 	= $('#country').val();
-	if(city == null || city == '') {
-		msj('error', 'Deebe escoger una ciudad');
-		return;
-	}
 	if(name == null || name == '') {
 		msj('error', 'Nombre debe completarse');
 		return;
@@ -64,8 +59,7 @@ function sendInformation(){
 		return;
 	}
 	$.ajax({
-		data : {City        : city,
-				Name	    : name,
+		data : {Name	    : name,
 				Surname	    : surname,
 				Email 	    : email,
 				Phone	    : phone,

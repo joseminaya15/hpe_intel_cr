@@ -106,7 +106,7 @@
             </div>
         </div>
     </section>
-    <footer class="js-section">
+    <footer>
         <div class="js-container text-center">
             <p class="content">Intel y el logotipo de Intel son marcas comerciales de la Corporación Intel o sus filiales en los Estados Unidos o en otros países</p>
             <p>&copy;2018 Copyright Hewlett Packard Enterprise Development LP</p>
@@ -179,10 +179,10 @@
     <script src="<?php echo RUTA_JS?>Utils.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_JS?>jsindex.js?v=<?php echo time();?>"></script>
     <script type="text/javascript">
-        // var URLactual = window.location;
-        // if(URLactual['href'] != 'http://www.marketinghpe.com/microsite/nsx_sdn/cr'){
-        //     location.href = 'http://www.marketinghpe.com/microsite/nsx_sdn/cr';
-        // }
+        var URLactual = window.location;
+        if(URLactual['href'] != 'http://www.marketinghpe.com/microsite/nsx_sdn/cr/'){
+            location.href = 'http://www.marketinghpe.com/microsite/nsx_sdn/cr/';
+        }
     </script>
 </body>
 </html>

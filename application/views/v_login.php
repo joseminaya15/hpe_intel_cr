@@ -10,7 +10,7 @@
         <meta name="date"                   content="Febrero 15, 2018"/>
         <meta name="language"               content="es">
         <meta name="theme-color"            content="#000000">
-    	<title>HPE Simplivity - Intel</title>
+    	<title>HPE Intel NSX - SDN</title>
     	<link rel="shortcut icon" href="<?php echo RUTA_IMG?>logo/favicon.ico">
     	<link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>toaster/toastr.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap-select/css/bootstrap-select.min.css?v=<?php echo time();?>">
@@ -26,9 +26,6 @@
         <div class="js-header">
             <div class="js-header--left">
                 <img src="<?php echo RUTA_IMG?>logo/hpe-logo.png">
-            </div>
-            <div class="js-header--right">
-                <p>HPE Simplivity - Intel</p>
             </div>
         </div>
         <section class="js-section js-height">

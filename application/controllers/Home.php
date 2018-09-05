@@ -27,7 +27,6 @@ class Home extends CI_Controller {
 			$telefono	    = $this->input->post('Phone');
 			$empresa 		= $this->input->post('Company');
 			$cargo 		    = $this->input->post('Position');
-			$city           = $this->input->post('City');
 			$pais	 		= $this->input->post('Country');
 			$existe         = $this->M_Datos->existCorreo($correo);
 			$fecha          = date('Y-m-d');
@@ -41,7 +40,6 @@ class Home extends CI_Controller {
 										   'telefono' 	=> $telefono,
 										   'empresa'    => $empresa,
 										   'cargo'      => $cargo,
-										   'ciudad'     => $city,
 										   'pais'       => $pais,
 										   'fecha'      => $fecha);
 				$datoInsert  = $this->M_Datos->insertarDatos($insertParticipante,'participante');
