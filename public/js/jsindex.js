@@ -26,6 +26,10 @@ function sendInformation(){
 	var company 	= $('#company').val();
 	var position 	= $('#position').val();
 	var country 	= $('#country').val();
+	var electronico   = $('#electronico').is(':checked');
+	var noelectronico = $('#noelectronico').is(':checked');
+	var telefono      = $('#telefono').is(':checked');
+	var notelefono    = $('#notelefono').is(':checked');
 	if(name == null || name == '') {
 		msj('error', 'Nombre debe completarse');
 		return;
@@ -58,6 +62,16 @@ function sendInformation(){
 		msj('error', 'País debe completarse');
 		return;
 	}
+	if(electronico == true){
+		comucorreo = 1;
+	}else{
+		comucorreo = 2;
+	}
+	if(telefono == true){
+		comutelefono = 1;
+	}else{
+		comutelefono = 2;
+	}
 	$.ajax({
 		data : {Name	    : name,
 				Surname	    : surname,
@@ -65,7 +79,9 @@ function sendInformation(){
 				Phone	    : phone,
 				Company	    : company,
 				Position    : position,
-				Country	    : country},
+				Country	    : country,
+				Comucorreo   : comucorreo,
+			    Comutelefono : comutelefono},
 		url  : 'home/register',
 		type : 'POST'
 	}).done(function(data){

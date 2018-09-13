@@ -28,6 +28,8 @@ class Home extends CI_Controller {
 			$empresa 		= $this->input->post('Company');
 			$cargo 		    = $this->input->post('Position');
 			$pais	 		= $this->input->post('Country');
+			$flg_correo     = $this->input->post('Comucorreo');
+			$flg_telefono   = $this->input->post('Comutelefono');
 			$existe         = $this->M_Datos->existCorreo($correo);
 			$fecha          = date('Y-m-d');
 			if(count($existe) != 0) {
@@ -41,7 +43,9 @@ class Home extends CI_Controller {
 										   'empresa'    => $empresa,
 										   'cargo'      => $cargo,
 										   'pais'       => $pais,
-										   'fecha'      => $fecha);
+										   'fecha'      => $fecha,
+										   'flg_correo'   => $flg_correo,
+										   'flg_telefono' => $flg_telefono);
 				$datoInsert  = $this->M_Datos->insertarDatos($insertParticipante,'participante');
 				$this->sendConfirmation($correo);
 	          	$data['msj']   = $datoInsert['msj'];
@@ -61,7 +65,7 @@ class Home extends CI_Controller {
 			                     'smtp_host' => 'smtpout.secureserver.net',
 			                     'smtp_port' => 3535,
 			                     'smtp_user' => 'info@marketinghpe.com',
-			                     'smtp_pass' => 'Ag0#3918Peh',
+			                     'smtp_pass' => 'h#120918Pe',
 			                     'mailtype'  => 'html',
 			                     'charset'   => 'utf-8',
 			                     'newline'   => "\r\n");    
@@ -74,22 +78,6 @@ class Home extends CI_Controller {
 <html>
     <body>
         <table width="500px" cellpadding="0" cellspacing="0" align="center" style="border: solid 1px #ccc;">
-            <tr>
-                <td>
-                    <table width="500" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #415564;padding: 15px 20px;">
-                        <tr>
-                            <td>
-                                <table>
-                                    <tr>
-                                        <td><img src="http://www.marketinghpe.com/microsite/Simplivity_Workshop/public/img/logo/hpe-intel.png" width="240" alt="alternative text" border="0" style="display: block;"></td>
-                                        <td></td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
             <tr>
                 <td>
                     <table width="400" cellspacing="0" cellpadding="0" border="0" align="center" style="padding: 30px 0">

@@ -98,6 +98,32 @@
                     </div>
                 </div>
             </div>
+            <div class="js-terminos">
+                <p>Le gustar&iacute;a recibir comunicaciones personalizadas sobre HPE y sobre productos, servicios, ofertas y eventos seleccionados de partners de HPE?</p>
+                <div class="js-radio">
+                    <label class="js-label__name">Correo electr&oacute;nico*</label>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="electronico">
+                        <input type="radio" id="electronico" class="mdl-radio__button" name="options" value="1">
+                        <span class="mdl-radio__label">Si</span>
+                    </label>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="noelectronico">
+                        <input type="radio" id="noelectronico" class="mdl-radio__button" name="options" value="2">
+                        <span class="mdl-radio__label">No</span>
+                    </label>
+                </div>
+                <div class="js-radio">
+                    <label class="js-label__name">Tel&eacute;fono*</label>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="telefono">
+                        <input type="radio" id="telefono" class="mdl-radio__button" name="options1" value="1">
+                        <span class="mdl-radio__label">Si</span>
+                    </label>
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="notelefono">
+                        <input type="radio" id="notelefono" class="mdl-radio__button" name="options1" value="2">
+                        <span class="mdl-radio__label">No</span>
+                    </label>
+                </div>
+                <p>Para m&aacute;s informaci&oacute;n sobre c&oacute;mo HPE gestiona, usa y protege su informaci&oacute;n, consulte la <a href="https://www.hpe.com/lamerica/es/legal/privacy.html" target="_blank" id="">Declaraci&oacute;n de privacidad de HPE.</a> Siempre puede anular o modificar su consentimiento para recibir comunicaciones de marketing de HPE. Podr&aacute; hacerlo mediante las opciones de exclusi&oacute;n voluntaria y preferencias que se encuentran en la parte inferior de nuestras comunicaciones de marketing por correo electr&oacute;nico o bien, siguiendo el <a href="https://h41360.www4.hpe.com/unsubscribe-gp.php" target="_blank">enlace a continuaci&oacute;n.</a>Si proporcion&oacute; su n&uacute;mero de tel&eacute;fono m&oacute;vil para recibir comunicaciones de marketing, tenga en cuenta que podr&iacute;n aplicarse cargos por roaming.</p>
+            </div>
             <div class="js-section--button text-left">
                 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button js-login" onclick="sendInformation()">Enviar</button>
             </div>
@@ -112,63 +138,6 @@
             <p>&copy;2018 Copyright Hewlett Packard Enterprise Development LP</p>
         </div>
     </footer>
-    <!--MODAL-->
-    <div class="modal fade" id="ModalLogin" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
-        <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-                <div class="mdl-card">
-                    <div class="mdl-card__title">
-                        <p>Completar la siguiente informaci&oacute;n</p>
-                    </div>
-                    <div class="mdl-card__supporting-text p-t-0">
-                        <div class="col-xs-12 p-0">
-                            <div class="js-input js-date js-flex">
-                                <input class="js-disabled" type="text" id="llegada" name="llegada" maxlength="10" placeholder="Fecha de Llegada" value="" style="pointer-events: none">
-                                <div class="js-icon">
-                                    <button type="button" class="mdl-button mdl-js-button mdl-button--icon">
-                                        <i class="mdi mdi-date_range"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 p-0">
-                            <div class="js-input js-date js-flex">
-                                <input class="js-disabled" type="text" id="retorno" name="retorno" maxlength="10" placeholder="Fecha de Retorno" value="" style="pointer-events: none">
-                                <div class="js-icon">
-                                    <button type="button" class="mdl-button mdl-js-button mdl-button--icon">
-                                        <i class="mdi mdi-date_range"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 p-0">
-                            <div class=" js-input">
-                                <label for="text">#Reserva de Hotel</label>
-                                <input type="text" id="reserva" >
-                            </div>
-                        </div>
-                        <div class="col-xs-12 p-0">
-                            <div class="js-input js-radio">
-                                <label>¿Participar&aacute; en la visita al Shopping Mall del d&iacute;a Miercoles (6 pm)&#63;</label>
-                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="invitado">
-                                    <input type="radio" id="invitado" class="mdl-radio__button" name="options" value="1" checked>
-                                    <span class="mdl-radio__label">Si</span>
-                                </label>
-                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="noinvitado">
-                                    <input type="radio" id="noinvitado" class="mdl-radio__button" name="options" value="0">
-                                    <span class="mdl-radio__label">No</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mdl-card__actions text-right">
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" data-dismiss="modal">Cerrar</button>
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button" onclick="sendReserva()">Enviar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 	<script src="<?php echo RUTA_JS?>jquery-3.2.1.min.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_JS?>jquery-1.11.2.min.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_PLUGINS?>bootstrap/js/bootstrap.min.js?v=<?php echo time();?>"></script>
