@@ -37,7 +37,7 @@
                     <h2>Gane agilidad con un datacenter definido por software - SDDC</h2>
                     <div class="js-xeon">
                         <img src="<?php echo RUTA_IMG?>logo/xeon-logo.png">
-                        <p>Familia de procesadores escalables Intel&reg; Xeon&reg;</p>
+                        <p>Familia de procesadores escalables Intel&reg; Xeon&reg; Platinum processor</p>
                     </div>
                 </div>
             </div>
@@ -134,7 +134,7 @@
     </section>
     <footer>
         <div class="js-container text-center">
-            <p class="content">Intel y el logotipo de Intel son marcas comerciales de la Corporación Intel o sus filiales en los Estados Unidos o en otros países</p>
+            <p class="content">Intel y el logotipo de Intel son marcas comerciales de la Corporación Intel o sus filiales en los Estados Unidos o en otros países.</p>
             <p>&copy;2018 Copyright Hewlett Packard Enterprise Development LP</p>
         </div>
     </footer>
